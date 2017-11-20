@@ -1,0 +1,5 @@
+# fix_wave_header
+
+It happend that an audio recording tool failed to save the headers for a few .wav files rendering them unplayable, while stil saving the actual audio content.
+
+This is what I wrote to recreate the headers.  It requires content to be last actual files to be at the 80 byte mark, and be the last piece of actual data in the file.
